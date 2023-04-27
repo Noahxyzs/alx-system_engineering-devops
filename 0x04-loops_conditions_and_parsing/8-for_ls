@@ -2,5 +2,5 @@
 # for ls
 for files in *
 do 
-    echo "$files" | cut -d'-' -f 1 | rev
+    echo "$files" | rev | cut -d'-' -f 1 | rev
 done
