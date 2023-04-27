@@ -1,19 +1,17 @@
 #!/usr/bin/env bash
-# Fizz buzz
-count=1
-while [ "$count" -lt 101 ]
+# script FizzBuzz
+for i in {1..100}
 do
-    if [ $((count%15)) = 0 ]
+    if [ $((i % 3)) -eq 0 ] && [ $((i % 5)) -eq 0 ]
     then
-        echo "FizzBuzz"
-    elif [ $((count%3)) = 0 ]
+	echo "FizzBuzz"
+    elif [ $((i % 3)) -eq 0 ]
     then
-        echo "Fizz"
-    elif [ $((count%5)) = 0 ]
+	echo "Fizz"
+    elif [ $((i % 5)) -eq 0 ]
     then
-        echo "Buzz"
+	echo "Buzz"
     else
-            echo "$count"
+	echo "$i"
     fi
-((count++))
 done
