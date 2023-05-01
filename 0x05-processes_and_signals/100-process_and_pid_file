@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# This script creates the file
+function loveme() {
+    rm /var/run/myscript.pid
+    exit
+}
+
+trap "echo I hate the kill command;loveme" SIGTERM
+trap "echo Y U no love me?!;loveme" SIGINT
+
+echo $$ >> /var/run/myscript.pid
+while [ true ]; do
+    echo To infinity and beyond;
+done
