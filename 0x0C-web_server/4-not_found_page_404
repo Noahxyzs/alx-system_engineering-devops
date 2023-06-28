@@ -6,7 +6,7 @@ apt-get install -y nginx
 service nginx start
 mkdir /etc/nginx/html
 echo "Hello world" > /etc/nginx/html/index.html
-echo "server not found" > /etc/nginx/html/404.html
+echo "Ceci n'est pas une page" > /etc/nginx/html/404.html
 echo "server {
     listen 80;
     listen [::]:80 default_server;
