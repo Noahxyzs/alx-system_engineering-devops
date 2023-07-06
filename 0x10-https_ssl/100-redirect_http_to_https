@@ -41,10 +41,11 @@ defaults
 frontend www-http
         bind *:80
         reqadd X-Forwarded-Proto:\ http
+	redirect scheme https 301 if !{ ssl_fc }
         default_backend www-backend
 
 frontend www-https
-        bind *:443 ssl crt /etc/haproxy/certs/www.noah.tech.pem
+        bind *:443 ssl crt /etc/haproxy/certs/
         reqadd X-Forwarded-Proto:\ https
         acl letsencrypt-acl path_beg /.well-known/acme-challenge/
         use_backend letsencrypt-backend if letsencrypt-acl
