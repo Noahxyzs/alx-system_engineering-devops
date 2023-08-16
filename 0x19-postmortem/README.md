@@ -1,3 +1,5 @@
+![new](https://github.com/Noahxyzs/alx-higher_level_programming/assets/105595182/258388dd-981f-4676-882e-df01e955e6bd)
+![R](https://github.com/Noahxyzs/alx-higher_level_programming/assets/105595182/b7d5c57a-504e-4a81-a87b-e5c93eb1b445)
 Summary
 On Aug 9th, 2018 at midnight the server access went down resulting in 504 error for anyone trying to access a website. Background on the server being based on a LAMP stack.
 Timeline
